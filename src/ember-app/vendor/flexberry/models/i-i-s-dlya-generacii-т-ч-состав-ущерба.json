@@ -1,0 +1,127 @@
+﻿{
+  "name": "IISDlya_generaciiТЧСоставУщерба",
+  "modelName": "i-i-s-dlya-generacii-т-ч-состав-ущерба",
+  "className": "ТЧСоставУщерба",
+  "nameSpace": "IIS.Dlya_generacii",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "количество",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "суммаУщерба",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "видыУщерба",
+      "relatedTo": "i-i-s-dlya-generacii-виды-ущерба",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТЧСоставУщербаE",
+      "modelName": "i-i-s-dlya-generacii-т-ч-состав-ущерба",
+      "attrs": [
+        {
+          "name": "суммаУщерба",
+          "caption": "Сумма ущерба",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "количество",
+          "caption": "Количество",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "ВидУщерба",
+          "lookupValueField": "видУщерба",
+          "relationName": "ВидыУщерба",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "видУщерба",
+              "caption": "Вид ущерба",
+              "hidden": true,
+              "index": 3
+            }
+          ],
+          "index": 2,
+          "type": "standard",
+          "caption": "Виды ущерба",
+          "name": "видыУщерба",
+          "relatedTo": "i-i-s-dlya-generacii-виды-ущерба",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ТЧСоставУщербаL",
+      "modelName": "i-i-s-dlya-generacii-т-ч-состав-ущерба",
+      "attrs": [
+        {
+          "name": "суммаУщерба",
+          "caption": "Сумма ущерба",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "количество",
+          "caption": "Количество",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ВидыУщерба",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "видУщерба",
+              "caption": "Вид ущерба",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Вид ущерба",
+          "name": "видыУщерба",
+          "relatedTo": "i-i-s-dlya-generacii-виды-ущерба",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

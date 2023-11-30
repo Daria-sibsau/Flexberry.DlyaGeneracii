@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-dlya-generacii-виды-ущерба-e",
+  "editForm": "i-i-s-dlya-generacii-виды-ущерба-e",
+  "external": false,
+  "caption": "Виды ущерба",
+  "name": "IISDlya_generaciiВидыУщербаL",
+  "className": "ВидыУщербаL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-dlya-generacii-виды-ущерба",
+      "modelProjection": "ВидыУщербаL"
+    }
+  ]
+}

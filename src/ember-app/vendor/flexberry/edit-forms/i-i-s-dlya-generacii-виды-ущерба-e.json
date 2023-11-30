@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Виды ущерба",
+  "name": "IISDlya_generaciiВидыУщербаE",
+  "className": "ВидыУщербаE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-dlya-generacii-виды-ущерба",
+      "modelProjection": "ВидыУщербаE"
+    }
+  ]
+}

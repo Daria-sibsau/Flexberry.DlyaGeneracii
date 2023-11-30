@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-dlya-generacii-т-ч-состав-жалобы-e",
+  "editForm": "i-i-s-dlya-generacii-т-ч-состав-жалобы-e",
+  "external": false,
+  "caption": "Т ч состав жалобы",
+  "name": "IISDlya_generaciiТЧСоставЖалобыL",
+  "className": "ТЧСоставЖалобыL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-dlya-generacii-т-ч-состав-жалобы",
+      "modelProjection": "ТЧСоставЖалобыL"
+    }
+  ]
+}

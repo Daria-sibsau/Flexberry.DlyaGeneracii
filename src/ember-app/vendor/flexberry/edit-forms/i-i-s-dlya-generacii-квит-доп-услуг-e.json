@@ -1,0 +1,39 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Клиенты",
+      "projection": "КлиентыL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ТЧПереченьУсл",
+      "projection": "ТЧПереченьУслL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Организация",
+      "projection": "ОрганизацияL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Квит доп услуг",
+  "name": "IISDlya_generaciiКвитДопУслугE",
+  "className": "КвитДопУслугE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-dlya-generacii-квит-доп-услуг",
+      "modelProjection": "КвитДопУслугE"
+    }
+  ]
+}

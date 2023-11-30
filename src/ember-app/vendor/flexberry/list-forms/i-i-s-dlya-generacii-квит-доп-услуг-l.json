@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-dlya-generacii-квит-доп-услуг-e",
+  "editForm": "i-i-s-dlya-generacii-квит-доп-услуг-e",
+  "external": false,
+  "caption": "Квит доп услуг",
+  "name": "IISDlya_generaciiКвитДопУслугL",
+  "className": "КвитДопУслугL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-dlya-generacii-квит-доп-услуг",
+      "modelProjection": "КвитДопУслугL"
+    }
+  ]
+}

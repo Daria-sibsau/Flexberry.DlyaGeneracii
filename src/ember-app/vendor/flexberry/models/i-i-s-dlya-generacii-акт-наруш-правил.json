@@ -1,0 +1,274 @@
+﻿{
+  "name": "IISDlya_generaciiАктНарушПравил",
+  "modelName": "i-i-s-dlya-generacii-акт-наруш-правил",
+  "className": "АктНарушПравил",
+  "nameSpace": "IIS.Dlya_generacii",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номерДок",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "клиенты",
+      "relatedTo": "i-i-s-dlya-generacii-клиенты",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "организация",
+      "relatedTo": "i-i-s-dlya-generacii-организация",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "персонал",
+      "relatedTo": "i-i-s-dlya-generacii-персонал",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "тЧСоставУщерба",
+      "relatedTo": "i-i-s-dlya-generacii-т-ч-состав-ущерба",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "АктНарушПравилE",
+      "modelName": "i-i-s-dlya-generacii-акт-наруш-правил",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "номерДок",
+          "caption": "Номер док",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Наименование",
+          "lookupValueField": "наименование",
+          "relationName": "Организация",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": true,
+              "index": 3
+            }
+          ],
+          "index": 2,
+          "type": "standard",
+          "caption": "Организация",
+          "name": "организация",
+          "relatedTo": "i-i-s-dlya-generacii-организация",
+          "inverse": null
+        },
+        {
+          "lookupValue": "ФИО",
+          "lookupValueField": "фИО",
+          "relationName": "Клиенты",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "ФИО",
+              "hidden": true,
+              "index": 5
+            }
+          ],
+          "index": 4,
+          "type": "standard",
+          "caption": "Клиенты",
+          "name": "клиенты",
+          "relatedTo": "i-i-s-dlya-generacii-клиенты",
+          "inverse": null
+        },
+        {
+          "lookupValue": "ФИО",
+          "lookupValueField": "фИО",
+          "relationName": "Персонал",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "ФИО",
+              "hidden": true,
+              "index": 7
+            }
+          ],
+          "index": 6,
+          "type": "standard",
+          "caption": "Персонал",
+          "name": "персонал",
+          "relatedTo": "i-i-s-dlya-generacii-персонал",
+          "inverse": null
+        },
+        {
+          "lookupValue": "СуммаУщерба",
+          "lookupValueField": "суммаУщерба",
+          "relationName": "ТЧСоставУщерба",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "суммаУщерба",
+              "caption": "Сумма ущерба",
+              "hidden": true,
+              "index": 9
+            }
+          ],
+          "index": 8,
+          "type": "standard",
+          "caption": "Т ч состав ущерба",
+          "name": "тЧСоставУщерба",
+          "relatedTo": "i-i-s-dlya-generacii-т-ч-состав-ущерба",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "АктНарушПравилL",
+      "modelName": "i-i-s-dlya-generacii-акт-наруш-правил",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "номерДок",
+          "caption": "Номер док",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Организация",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Наименование",
+          "name": "организация",
+          "relatedTo": "i-i-s-dlya-generacii-организация",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Клиенты",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "ФИО",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "ФИО",
+          "name": "клиенты",
+          "relatedTo": "i-i-s-dlya-generacii-клиенты",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Персонал",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "ФИО",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "ФИО",
+          "name": "персонал",
+          "relatedTo": "i-i-s-dlya-generacii-персонал",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ТЧСоставУщерба",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "суммаУщерба",
+              "caption": "Сумма ущерба",
+              "hidden": false,
+              "index": 5
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Сумма ущерба",
+          "name": "тЧСоставУщерба",
+          "relatedTo": "i-i-s-dlya-generacii-т-ч-состав-ущерба",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

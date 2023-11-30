@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistencehttp://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="Olingo4PG">
+        <class>Dlya_generacii.model.TCHSostavUshherba</class>
+        <class>Dlya_generacii.model.DopUslugi</class>
+        <class>Dlya_generacii.model.Personal</class>
+        <class>Dlya_generacii.model.TCHSostavZHaloby</class>
+        <class>Dlya_generacii.model.Klienty</class>
+        <class>Dlya_generacii.model.ZHalobaKlienta</class>
+        <class>Dlya_generacii.model.Dolzhnosti</class>
+        <class>Dlya_generacii.model.Organizaciya</class>
+        <class>Dlya_generacii.model.TCHPerechenUsl</class>
+        <class>Dlya_generacii.model.VidyUshherba</class>
+        <class>Dlya_generacii.model.AktNarushPravil</class>
+        <class>Dlya_generacii.model.KvitDopUslug</class>
+        <class>Dlya_generacii.model.FlexberryAdvLimit</class>
+        <class>Dlya_generacii.model.NewPlatformFlexberryFlexberryUserSetting</class>
+        <class>Dlya_generacii.model.NewPlatformFlexberryServicesLock</class>
+        <class>Dlya_generacii.model.IISCaseberryLoggingObjectsApplicationLog</class>
+
+    </persistence-unit>
+</persistence>

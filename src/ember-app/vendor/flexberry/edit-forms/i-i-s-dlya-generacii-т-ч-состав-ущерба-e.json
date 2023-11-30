@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ВидыУщерба",
+      "projection": "ВидыУщербаL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Т ч состав ущерба",
+  "name": "IISDlya_generaciiТЧСоставУщербаE",
+  "className": "ТЧСоставУщербаE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-dlya-generacii-т-ч-состав-ущерба",
+      "modelProjection": "ТЧСоставУщербаE"
+    }
+  ]
+}

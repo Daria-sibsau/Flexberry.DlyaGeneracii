@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-dlya-generacii-клиенты-e",
+  "editForm": "i-i-s-dlya-generacii-клиенты-e",
+  "external": false,
+  "caption": "Клиенты",
+  "name": "IISDlya_generaciiКлиентыL",
+  "className": "КлиентыL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-dlya-generacii-клиенты",
+      "modelProjection": "КлиентыL"
+    }
+  ]
+}

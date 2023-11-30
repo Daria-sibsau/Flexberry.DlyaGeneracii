@@ -1,0 +1,119 @@
+<h3 class="ui header">{{t "forms.i-i-s-dlya-generacii-клиенты-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.фИО
+      class=(if (v-get validationModel "фИО" "isInvalid") "error")
+      label=(t "forms.i-i-s-dlya-generacii-клиенты-e.фИО-caption")
+      data-test-i-i-s-dlya-generacii-клиенты-e-фИО=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "фИО" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.телефон
+      class=(if (v-get validationModel "телефон" "isInvalid") "error")
+      label=(t "forms.i-i-s-dlya-generacii-клиенты-e.телефон-caption")
+      data-test-i-i-s-dlya-generacii-клиенты-e-телефон=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "телефон" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.почта
+      class=(if (v-get validationModel "почта" "isInvalid") "error")
+      label=(t "forms.i-i-s-dlya-generacii-клиенты-e.почта-caption")
+      data-test-i-i-s-dlya-generacii-клиенты-e-почта=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "почта" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.номерПаспорта
+      class=(if (v-get validationModel "номерПаспорта" "isInvalid") "error")
+      label=(t "forms.i-i-s-dlya-generacii-клиенты-e.номерПаспорта-caption")
+      data-test-i-i-s-dlya-generacii-клиенты-e-номерПаспорта=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "номерПаспорта" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.кемВыдан
+      class=(if (v-get validationModel "кемВыдан" "isInvalid") "error")
+      label=(t "forms.i-i-s-dlya-generacii-клиенты-e.кемВыдан-caption")
+      data-test-i-i-s-dlya-generacii-клиенты-e-кемВыдан=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "кемВыдан" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-dlya-generacii-клиенты-e.датаВыдачи-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=readonly
+      value=model.датаВыдачи
+      class=(if (v-get validationModel "датаВыдачи" "isInvalid") "error")
+      data-test-i-i-s-dlya-generacii-клиенты-e-датаВыдачи=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "датаВыдачи" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-dlya-generacii-клиенты-e.иноГражданин-caption"}}</label>
+    {{flexberry-checkbox
+      readonly=readonly
+      value=model.иноГражданин
+      class=(if (v-get validationModel "иноГражданин" "isInvalid") "error")
+      data-test-i-i-s-dlya-generacii-клиенты-e-иноГражданин=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "иноГражданин" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.номерКомнаты
+      class=(if (v-get validationModel "номерКомнаты" "isInvalid") "error")
+      label=(t "forms.i-i-s-dlya-generacii-клиенты-e.номерКомнаты-caption")
+      data-test-i-i-s-dlya-generacii-клиенты-e-номерКомнаты=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "номерКомнаты" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-dlya-generacii-клиенты-e.датаРождения-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=readonly
+      value=model.датаРождения
+      class=(if (v-get validationModel "датаРождения" "isInvalid") "error")
+      data-test-i-i-s-dlya-generacii-клиенты-e-датаРождения=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "датаРождения" "message")}}
+  </div>
+</form>

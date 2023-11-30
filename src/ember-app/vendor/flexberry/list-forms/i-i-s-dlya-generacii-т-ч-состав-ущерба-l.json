@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-dlya-generacii-т-ч-состав-ущерба-e",
+  "editForm": "i-i-s-dlya-generacii-т-ч-состав-ущерба-e",
+  "external": false,
+  "caption": "Т ч состав ущерба",
+  "name": "IISDlya_generaciiТЧСоставУщербаL",
+  "className": "ТЧСоставУщербаL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-dlya-generacii-т-ч-состав-ущерба",
+      "modelProjection": "ТЧСоставУщербаL"
+    }
+  ]
+}

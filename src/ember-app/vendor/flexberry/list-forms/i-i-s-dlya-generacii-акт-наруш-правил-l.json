@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-dlya-generacii-акт-наруш-правил-e",
+  "editForm": "i-i-s-dlya-generacii-акт-наруш-правил-e",
+  "external": false,
+  "caption": "Акт наруш правил",
+  "name": "IISDlya_generaciiАктНарушПравилL",
+  "className": "АктНарушПравилL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-dlya-generacii-акт-наруш-правил",
+      "modelProjection": "АктНарушПравилL"
+    }
+  ]
+}

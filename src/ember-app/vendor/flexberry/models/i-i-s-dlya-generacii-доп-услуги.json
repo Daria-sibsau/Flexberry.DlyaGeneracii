@@ -1,0 +1,96 @@
+﻿{
+  "name": "IISDlya_generaciiДопУслуги",
+  "modelName": "i-i-s-dlya-generacii-доп-услуги",
+  "className": "ДопУслуги",
+  "nameSpace": "IIS.Dlya_generacii",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "описУслуги",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "стоимость",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "услуга",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ДопУслугиE",
+      "modelName": "i-i-s-dlya-generacii-доп-услуги",
+      "attrs": [
+        {
+          "name": "услуга",
+          "caption": "Услуга",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "описУслуги",
+          "caption": "Опис услуги",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "стоимость",
+          "caption": "Стоимость",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ДопУслугиL",
+      "modelName": "i-i-s-dlya-generacii-доп-услуги",
+      "attrs": [
+        {
+          "name": "услуга",
+          "caption": "Услуга",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "описУслуги",
+          "caption": "Опис услуги",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "стоимость",
+          "caption": "Стоимость",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

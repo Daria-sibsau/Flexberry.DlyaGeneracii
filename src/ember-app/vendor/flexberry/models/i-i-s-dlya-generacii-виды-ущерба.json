@@ -1,0 +1,75 @@
+﻿{
+  "name": "IISDlya_generaciiВидыУщерба",
+  "modelName": "i-i-s-dlya-generacii-виды-ущерба",
+  "className": "ВидыУщерба",
+  "nameSpace": "IIS.Dlya_generacii",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "видУщерба",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "стоимость",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ВидыУщербаE",
+      "modelName": "i-i-s-dlya-generacii-виды-ущерба",
+      "attrs": [
+        {
+          "name": "видУщерба",
+          "caption": "Вид ущерба",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "стоимость",
+          "caption": "Стоимость",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ВидыУщербаL",
+      "modelName": "i-i-s-dlya-generacii-виды-ущерба",
+      "attrs": [
+        {
+          "name": "видУщерба",
+          "caption": "Вид ущерба",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "стоимость",
+          "caption": "Стоимость",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

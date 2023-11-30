@@ -1,0 +1,99 @@
+﻿{
+  "applicationCaption": "Dlya_generacii",
+  "applicationTitle": "Dlya_generacii",
+  "items": [
+    {
+      "link": null,
+      "menuName": "dlya-generacii",
+      "caption": "Dlya_generacii",
+      "title": "Dlya_generacii",
+      "children": [
+        {
+          "link": "i-i-s-dlya-generacii-т-ч-состав-ущерба-l",
+          "menuName": null,
+          "caption": "Т ч состав ущерба",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-dlya-generacii-доп-услуги-l",
+          "menuName": null,
+          "caption": "Доп услуги",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-dlya-generacii-персонал-l",
+          "menuName": null,
+          "caption": "Персонал",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-dlya-generacii-т-ч-состав-жалобы-l",
+          "menuName": null,
+          "caption": "Т ч состав жалобы",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-dlya-generacii-клиенты-l",
+          "menuName": null,
+          "caption": "Клиенты",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-dlya-generacii-жалоба-клиента-l",
+          "menuName": null,
+          "caption": "Жалоба клиента",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-dlya-generacii-должности-l",
+          "menuName": null,
+          "caption": "Должности",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-dlya-generacii-организация-l",
+          "menuName": null,
+          "caption": "Организация",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-dlya-generacii-т-ч-перечень-усл-l",
+          "menuName": null,
+          "caption": "Т ч перечень усл",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-dlya-generacii-виды-ущерба-l",
+          "menuName": null,
+          "caption": "Виды ущерба",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-dlya-generacii-акт-наруш-правил-l",
+          "menuName": null,
+          "caption": "Акт наруш правил",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-dlya-generacii-квит-доп-услуг-l",
+          "menuName": null,
+          "caption": "Квит доп услуг",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

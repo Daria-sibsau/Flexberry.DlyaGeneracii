@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-dlya-generacii-т-ч-перечень-усл-e",
+  "editForm": "i-i-s-dlya-generacii-т-ч-перечень-усл-e",
+  "external": false,
+  "caption": "Т ч перечень усл",
+  "name": "IISDlya_generaciiТЧПереченьУслL",
+  "className": "ТЧПереченьУслL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-dlya-generacii-т-ч-перечень-усл",
+      "modelProjection": "ТЧПереченьУслL"
+    }
+  ]
+}

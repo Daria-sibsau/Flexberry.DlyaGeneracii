@@ -1,0 +1,281 @@
+﻿{
+  "name": "IISDlya_generaciiЖалобаКлиента",
+  "modelName": "i-i-s-dlya-generacii-жалоба-клиента",
+  "className": "ЖалобаКлиента",
+  "nameSpace": "IIS.Dlya_generacii",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номер",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "клиенты",
+      "relatedTo": "i-i-s-dlya-generacii-клиенты",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "организация",
+      "relatedTo": "i-i-s-dlya-generacii-организация",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "тЧСоставЖалобы",
+      "relatedTo": "i-i-s-dlya-generacii-т-ч-состав-жалобы",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ЖалобаКлиентаE",
+      "modelName": "i-i-s-dlya-generacii-жалоба-клиента",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "номер",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "ФИО",
+          "lookupValueField": "фИО",
+          "relationName": "Клиенты",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "ФИО",
+              "hidden": true,
+              "index": 3
+            }
+          ],
+          "index": 2,
+          "type": "standard",
+          "caption": "Клиенты",
+          "name": "клиенты",
+          "relatedTo": "i-i-s-dlya-generacii-клиенты",
+          "inverse": null
+        },
+        {
+          "lookupValue": "ОписаниеЖалобы",
+          "lookupValueField": "описаниеЖалобы",
+          "relationName": "ТЧСоставЖалобы",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "описаниеЖалобы",
+              "caption": "Описание жалобы",
+              "hidden": true,
+              "index": 5
+            }
+          ],
+          "index": 4,
+          "type": "standard",
+          "caption": "Т ч состав жалобы",
+          "name": "тЧСоставЖалобы",
+          "relatedTo": "i-i-s-dlya-generacii-т-ч-состав-жалобы",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Наименование",
+          "lookupValueField": "наименование",
+          "relationName": "Организация",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": true,
+              "index": 7
+            }
+          ],
+          "index": 6,
+          "type": "standard",
+          "caption": "Организация",
+          "name": "организация",
+          "relatedTo": "i-i-s-dlya-generacii-организация",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ЖалобаКлиентаL",
+      "modelName": "i-i-s-dlya-generacii-жалоба-клиента",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "номер",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Организация",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Наименование",
+          "name": "организация",
+          "relatedTo": "i-i-s-dlya-generacii-организация",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Клиенты",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "ФИО",
+              "hidden": false,
+              "index": 3
+            },
+            {
+              "name": "телефон",
+              "caption": "Телефон",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "ФИО",
+          "name": "клиенты",
+          "relatedTo": "i-i-s-dlya-generacii-клиенты",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ТЧСоставЖалобы",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "ТЧСоставЖалобы.Персонал",
+              "belongsTo": [
+                {
+                  "lookupValue": null,
+                  "lookupValueField": null,
+                  "relationName": "ТЧСоставЖалобы.Персонал.Должности",
+                  "belongsTo": [],
+                  "hidden": false,
+                  "attrs": [
+                    {
+                      "name": "наименование",
+                      "caption": "Ответственный",
+                      "hidden": false,
+                      "index": 7
+                    }
+                  ],
+                  "index": -1,
+                  "type": null,
+                  "caption": "",
+                  "name": "должности",
+                  "relatedTo": "i-i-s-dlya-generacii-должности",
+                  "inverse": null
+                }
+              ],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "фИО",
+                  "caption": "ФИО",
+                  "hidden": false,
+                  "index": 8
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "персонал",
+              "relatedTo": "i-i-s-dlya-generacii-персонал",
+              "inverse": null
+            }
+          ],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "описаниеЖалобы",
+              "caption": "Описание жалобы",
+              "hidden": false,
+              "index": 5
+            },
+            {
+              "name": "принятыеМеры",
+              "caption": "Принятые меры",
+              "hidden": false,
+              "index": 6
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Описание жалобы",
+          "name": "тЧСоставЖалобы",
+          "relatedTo": "i-i-s-dlya-generacii-т-ч-состав-жалобы",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

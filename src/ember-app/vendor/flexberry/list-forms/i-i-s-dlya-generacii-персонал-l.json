@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-dlya-generacii-персонал-e",
+  "editForm": "i-i-s-dlya-generacii-персонал-e",
+  "external": false,
+  "caption": "Персонал",
+  "name": "IISDlya_generaciiПерсоналL",
+  "className": "ПерсоналL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-dlya-generacii-персонал",
+      "modelProjection": "ПерсоналL"
+    }
+  ]
+}

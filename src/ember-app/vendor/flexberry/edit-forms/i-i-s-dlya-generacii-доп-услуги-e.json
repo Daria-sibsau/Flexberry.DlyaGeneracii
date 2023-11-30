@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Доп услуги",
+  "name": "IISDlya_generaciiДопУслугиE",
+  "className": "ДопУслугиE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-dlya-generacii-доп-услуги",
+      "modelProjection": "ДопУслугиE"
+    }
+  ]
+}

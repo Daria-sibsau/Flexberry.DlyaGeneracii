@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ДопУслуги",
+      "projection": "ДопУслугиL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Т ч перечень усл",
+  "name": "IISDlya_generaciiТЧПереченьУслE",
+  "className": "ТЧПереченьУслE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-dlya-generacii-т-ч-перечень-усл",
+      "modelProjection": "ТЧПереченьУслE"
+    }
+  ]
+}

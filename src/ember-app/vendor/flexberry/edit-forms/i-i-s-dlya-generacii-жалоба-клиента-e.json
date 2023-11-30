@@ -1,0 +1,39 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Клиенты",
+      "projection": "КлиентыL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ТЧСоставЖалобы",
+      "projection": "ТЧСоставЖалобыL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Организация",
+      "projection": "ОрганизацияL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Жалоба клиента",
+  "name": "IISDlya_generaciiЖалобаКлиентаE",
+  "className": "ЖалобаКлиентаE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-dlya-generacii-жалоба-клиента",
+      "modelProjection": "ЖалобаКлиентаE"
+    }
+  ]
+}

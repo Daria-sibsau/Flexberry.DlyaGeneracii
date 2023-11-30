@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-dlya-generacii-доп-услуги-e",
+  "editForm": "i-i-s-dlya-generacii-доп-услуги-e",
+  "external": false,
+  "caption": "Доп услуги",
+  "name": "IISDlya_generaciiДопУслугиL",
+  "className": "ДопУслугиL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-dlya-generacii-доп-услуги",
+      "modelProjection": "ДопУслугиL"
+    }
+  ]
+}

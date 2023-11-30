@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-dlya-generacii-жалоба-клиента-e",
+  "editForm": "i-i-s-dlya-generacii-жалоба-клиента-e",
+  "external": false,
+  "caption": "Жалоба клиента",
+  "name": "IISDlya_generaciiЖалобаКлиентаL",
+  "className": "ЖалобаКлиентаL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-dlya-generacii-жалоба-клиента",
+      "modelProjection": "ЖалобаКлиентаL"
+    }
+  ]
+}

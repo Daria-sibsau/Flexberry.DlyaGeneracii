@@ -1,0 +1,47 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Организация",
+      "projection": "ОрганизацияL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Клиенты",
+      "projection": "КлиентыL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Персонал",
+      "projection": "ПерсоналL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ТЧСоставУщерба",
+      "projection": "ТЧСоставУщербаL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Акт наруш правил",
+  "name": "IISDlya_generaciiАктНарушПравилE",
+  "className": "АктНарушПравилE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-dlya-generacii-акт-наруш-правил",
+      "modelProjection": "АктНарушПравилE"
+    }
+  ]
+}

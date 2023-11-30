@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-dlya-generacii-должности-e",
+  "editForm": "i-i-s-dlya-generacii-должности-e",
+  "external": false,
+  "caption": "Должности",
+  "name": "IISDlya_generaciiДолжностиL",
+  "className": "ДолжностиL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-dlya-generacii-должности",
+      "modelProjection": "ДолжностиL"
+    }
+  ]
+}

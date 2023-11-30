@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Клиенты",
+  "name": "IISDlya_generaciiКлиентыE",
+  "className": "КлиентыE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-dlya-generacii-клиенты",
+      "modelProjection": "КлиентыE"
+    }
+  ]
+}

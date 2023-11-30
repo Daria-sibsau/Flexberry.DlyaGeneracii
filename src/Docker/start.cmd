@@ -1,0 +1,1 @@
+docker-compose -p dlya_generacii up -d

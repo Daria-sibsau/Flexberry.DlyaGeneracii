@@ -1,0 +1,127 @@
+﻿{
+  "name": "IISDlya_generaciiТЧПереченьУсл",
+  "modelName": "i-i-s-dlya-generacii-т-ч-перечень-усл",
+  "className": "ТЧПереченьУсл",
+  "nameSpace": "IIS.Dlya_generacii",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "количество",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "сумма",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "допУслуги",
+      "relatedTo": "i-i-s-dlya-generacii-доп-услуги",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТЧПереченьУслE",
+      "modelName": "i-i-s-dlya-generacii-т-ч-перечень-усл",
+      "attrs": [
+        {
+          "name": "количество",
+          "caption": "Количество",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "сумма",
+          "caption": "Сумма",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Услуга",
+          "lookupValueField": "услуга",
+          "relationName": "ДопУслуги",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "услуга",
+              "caption": "Услуга",
+              "hidden": true,
+              "index": 3
+            }
+          ],
+          "index": 2,
+          "type": "standard",
+          "caption": "Доп услуги",
+          "name": "допУслуги",
+          "relatedTo": "i-i-s-dlya-generacii-доп-услуги",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ТЧПереченьУслL",
+      "modelName": "i-i-s-dlya-generacii-т-ч-перечень-усл",
+      "attrs": [
+        {
+          "name": "количество",
+          "caption": "Количество",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "сумма",
+          "caption": "Сумма",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ДопУслуги",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "услуга",
+              "caption": "Услуга",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Услуга",
+          "name": "допУслуги",
+          "relatedTo": "i-i-s-dlya-generacii-доп-услуги",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
